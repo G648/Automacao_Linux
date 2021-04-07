@@ -1,0 +1,14 @@
+1- Primero de tudo, crie um arquivo (que vai ser o seu script) em /etc/init.d
+      vim /etc/init.d/Meu_script
+      
+2- ao entar na tela do arquivo, o primeiro comando deverá ser: 
+      #!/bin/bash
+      # Colocar quais comando voce vai querer executar assim que o linux iniciar...
+      
+3- após criar o script e colocar as configuraçoes desejadas, voce deverá trocar a 
+permissão do arquivo para que ele consiga executar o comando.
+      chmod 755 /etc/init.d/Meu_script
+      
+4- agora é só colocar o script para inicializar junto com o sistema, utilizando 
+o comando:
+      update-rc.d meuscript defaults
